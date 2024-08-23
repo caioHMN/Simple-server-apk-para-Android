@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="171dp"
+        android:layout_height="71dp"
+        android:autofillHints=""
+        android:hint="Enter Port Number"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="120dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="239dp"
+        android:layout_height="55dp"
+        android:text="Start Server"
+        app:layout_constraintTop_toBottomOf="@+id/portEditText"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="236dp"
+        android:layout_height="58dp"
+        android:text="Stop Server"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="83dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
